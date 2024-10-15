@@ -35,15 +35,17 @@ jobs:
       #   run: pip install --find-links=target/wheels/ hi_world
       - name: python
         run: |
-          pwd
-          ls
           cd hi_world
           pip install .
       # - name: test
       #   run: mdbook test --library-path target/release/deps/
       - name: build
         run: |
-          cd tutorial
+          pwd
+          ls
+          cd hi_world/tutorial
+          pwd
+          ls
           mdbook build
       # - name: move
       #   run: mkdir -p _site/ && cp -r book/build/* _site/
