@@ -46,10 +46,7 @@ jobs:
       # - name: move
       #   run: mkdir -p _site/ && cp -r book/build/* _site/
       - name: move
-        run: |
-          cd hi_world/
-          ls
-          mkdir -p _site/ && cp -r tutorial/book/* _site/
+        run: mkdir -p _site/ && cp -r hi_world/tutorial/book/* _site/
       - name: upload
         uses: actions/upload-pages-artifact@v3
   deploy:
