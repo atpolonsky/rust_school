@@ -47,6 +47,7 @@ jobs:
       #   run: mkdir -p _site/ && cp -r book/build/* _site/
       - name: move
         run: |
+          cd hi_world/
           ls
           mkdir -p _site/ && cp -r tutorial/book/* _site/
       - name: upload
