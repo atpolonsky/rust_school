@@ -35,6 +35,8 @@ jobs:
       #   run: pip install --find-links=target/wheels/ hi_world
       - name: python
         run: |
+          pwd
+          ls
           cd hi_world
           pip install .
       # - name: test
