@@ -36,7 +36,7 @@ jobs:
       - name: python
         run: |
           cd hi_world
-          pip install --find-links=target/wheels/ hi_world
+          pip install .
       # - name: test
       #   run: mdbook test --library-path target/release/deps/
       - name: build
