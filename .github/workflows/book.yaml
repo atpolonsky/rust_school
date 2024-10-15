@@ -31,8 +31,12 @@ jobs:
       #   run: pip install maturin
       # - name: install
       #   run: maturin build --release --features python
+      # - name: python
+      #   run: pip install --find-links=target/wheels/ hi_world
       - name: python
-        run: pip install --find-links=target/wheels/ hi_world
+        run: |
+          cd hi_world
+          pip install --find-links=target/wheels/ hi_world
       # - name: test
       #   run: mdbook test --library-path target/release/deps/
       - name: build
