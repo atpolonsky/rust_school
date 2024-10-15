@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hi_world"
+requires-python = ">3.10"
+dependencies = [
+    "h5py==3.11.0",
+]
+
+version = '0.0.1'
+
+[project.urls]
+# Documentation = 'https://automesh.readthedocs.io'
+# Homepage = 'https://autotwin.github.io/automesh'
+Repository = 'https://github.com/atpolonsky/rust_school'
+
+
+[tool.setuptools]
+packages = ["hi_world"]
+
+# CLI Entry Points
+# https://setuptools.pypa.io/en/latest/userguide/entry_point.html
+[project.scripts]
+hi_world="hi_world.hello:hi_world"

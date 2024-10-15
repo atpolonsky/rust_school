@@ -3,4 +3,7 @@ authors = ["Andrew T Polonsky"]
 language = "en"
 multilingual = false
 src = "src"
-title = "Hello World"
+title = "Tutorial"
+
+[preprocessor.cmdrun]
+[preprocessor.include]
