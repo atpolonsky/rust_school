@@ -41,18 +41,14 @@ jobs:
       #   run: mdbook test --library-path target/release/deps/
       - name: build
         run: |
-          pwd
-          ls
           cd hi_world/tutorial
-          pwd
-          ls
           mdbook build
       # - name: move
       #   run: mkdir -p _site/ && cp -r book/build/* _site/
       - name: move
         run: |
           ls
-          mkdir -p _site/ && cp -r tutorial/build/* _site/
+          mkdir -p _site/ && cp -r tutorial/book/* _site/
       - name: upload
         uses: actions/upload-pages-artifact@v3
   deploy:
