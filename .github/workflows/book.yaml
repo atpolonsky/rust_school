@@ -40,11 +40,15 @@ jobs:
       # - name: test
       #   run: mdbook test --library-path target/release/deps/
       - name: build
-        run: mdbook build
+        run: |
+          cd tutorial
+          mdbook build
       # - name: move
       #   run: mkdir -p _site/ && cp -r book/build/* _site/
       - name: move
-        run: mkdir -p _site/ && cp -r tutorial/build/* _site/
+        run: |
+          ls
+          mkdir -p _site/ && cp -r tutorial/build/* _site/
       - name: upload
         uses: actions/upload-pages-artifact@v3
   deploy:
