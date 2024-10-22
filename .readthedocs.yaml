@@ -13,6 +13,7 @@ build:
     # - VERSION=$(cargo tree | grep automesh | cut -d " " -f 2 | cut -d "v" -f 2) && sed -i "s/automesh latest/automesh $VERSION/" $READTHEDOCS_OUTPUT/html/automesh.html
     - pip install pdoc
     - cd hi_world/
+    - ls
     - pip install .
     - pdoc hi_world --docformat numpy --template-directory ./docs/ --logo "https://github.com/atpolonsky/rust_school/blob/main/hi_world/docs/logo.png?raw=true"
     # - VERSION=$(cargo tree | grep automesh | cut -d " " -f 2 | cut -d "v" -f 2) && sed -i "s/automesh latest/automesh $VERSION/" $READTHEDOCS_OUTPUT/html/automesh.html
