@@ -1,3 +1,6 @@
+# ignore macOS
+.DS_Store
+
 # ignore recon3d/data/output folder
 recon3d/data/output/
 
