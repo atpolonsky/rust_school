@@ -3,7 +3,7 @@ build:
   os: ubuntu-22.04
   tools:
     python: "latest"
-    rust: "latest"
+    # rust: "latest"
   commands:
     # - pip install maturin pdoc
     # - maturin build --features python --release
